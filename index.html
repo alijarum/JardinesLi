@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jardines LI</title>
+    <link rel="stylesheet" href="css/estilo.css">
+</head>
+<body>
+    <header>
+        <div id="logo"> <!-- id para trabajar con css-->
+            <img src="img/logo.jpeg" alt="logo" height="200" width="200">
+        </div> 
+            </header>
+            <br><br><br><br><br>
+            <section id="formulario">
+                <h2>Registro</h2>
+                <form name="Nuevo Usuario" method="POST" action="php/ConexionCrearUsuario.php">
+                    Nickname:<br>
+                    <input type="text" name="nickname" pattern="[a-aZ-Z0-9]+" placeholder="Ingresa tu Nickname" required><br>
+                    Contrasena:<br>
+                    <input type="password" name="contrasena" maxlength="20" autocomplete="new-password" placeholder="Ingresa su contrasena" required><br>
+                    Nombre:<br>
+                    <input type="text" name="nombre" placeholder="Ingresa tu nombre" required><br>
+                    Apellido:<br>
+                    <input type="text" name="apellidos" placeholder="Ingresa tus apellidos" required><br>
+                    Email:<br>
+                    <input type="email" name="correo" placeholder="Ingresa tu Email" required><br>
+                    Edad:<br>
+                    <input type="number" name="edad" min="18" placeholder="Ingresa tu edad" required><br>
+                    Descripcion:<br>
+                   <textarea name="descripcion"  placeholder="Ingresa tu descripcion" required></textarea><br>
+                   <input type="submit" name="enviar" class="boton" value="Registrate">
+                   <input type="reset" name="boton" class="boton" value="Borrar">
+                   <hr>
+                </form>
+            </section>
+
+            <section id="formulario2">
+                <form name="contacto" method="POST" action="php/IniciarSesion.php">
+                    <h2>Iniciar Sesion</h2>
+                    Nickname:<br>
+                    <input type="text" name="nickname" placeholder="Ingresa tu Nickname" required><br>
+                    Contrasena:<br>
+                    <input type="password" name="contrasena" autocomplete="off" placeholder="Ingresa su contrasena" required><br><br>
+                    <input type="submit" name="enviar" class="boton" value="Iniciar sesion">
+                </form>
+            </section>
+    
+            <footer>
+                <p>Copyright &copy; JDS LI </p> 
+                </footer>
+</body>
+</html>

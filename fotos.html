@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jardines LI</title>
+    <link rel="stylesheet" href="css/estilo.css">
+</head>
+<body>
+    <header>
+        <div id="logo"> <!-- id para trabajar con css-->
+            <img src="img/logo.jpeg" alt="logo" height="200" width="200">
+        </div> 
+        <nav class="menu">  
+            <ul>  <!-- Lista desordenada-->
+               <li><a href="index.html">Inicio</a></li>
+               <li><a href="perfil.html">Mi perfil</a></li>
+               <li><a href="amigos.html">Mis amigos</a></li>
+               <li> <a href="fotos.html">Mis fotos</a> </li>    
+               <li><a href="agregar.html">Buscar amigos</a></li>
+            </ul>                                                      
+        </nav>
+         </header>
+
+         <section id="recuadros">
+            <h2>Mis fotos</h2>
+            <h3><form action="php/SubirFoto.php" method="POST" enctype="multipart/form-data">
+                Anadir imagen: <input  name="archivo" id="archivo" type="file" accept=".jpg, .jpeg, .png" required/>
+            <input type="submit" name="subir" value="Subir"/>
+            </form></h3>
+         </section>
+
+         <section id="recuadros">
+            <h2>Mis fotos</h2>
+            <section class="recuadro">
+               <img src="img/foto1.jpg" height="100">
+            </section>
+        
+            <section class="recuadro">
+                <img src="img/foto2.png" height="100">
+             </section>
+        
+             <section class="recuadro">
+                <img src="img/foto3.png" height="100">
+             </section>
+        
+             <section class="recuadro">
+                <img src="img/fotox.png" height="100">
+             </section>
+         
+             <section class="recuadro">
+                 <img src="img/fotox.png" height="100">
+              </section>
+         
+              <section class="recuadro">
+                 <img src="img/fotox.png" height="100">
+              </section>
+         </section>
+        
+         <footer>
+            <p>Copyright &copy; JDS LI </p> 
+            </footer>
+</body>
+</html>
